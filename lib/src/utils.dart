@@ -42,9 +42,9 @@ abstract class GoogleWebService {
     if (baseUrl != null) {
       uri = Uri.parse(baseUrl);
       _url = uri;
+    } else {
+      _url = uri.replace(path: '${uri.path}$apiPath');
     }
-
-    _url = uri.replace(path: '${uri.path}$apiPath');
   }
 
   @protected
