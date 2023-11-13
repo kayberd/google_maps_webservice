@@ -477,7 +477,7 @@ class GoogleMapsPlaces extends GoogleWebService {
 
     return url
         .replace(
-          path: '${url.path}$_queryAutocompleteUrl',
+          path: '${url.path}',
           queryParameters: params,
         )
         .toString();

@@ -41,6 +41,7 @@ abstract class GoogleWebService {
 
     if (baseUrl != null) {
       uri = Uri.parse(baseUrl);
+      _url = uri;
     }
 
     _url = uri.replace(path: '${uri.path}$apiPath');
